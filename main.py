@@ -37,6 +37,6 @@ active_cancer = st.checkbox("Do you have active cancer?")
 recent_surgery_or_trauma = st.checkbox("Have you had recent surgery or trauma?")
 comorbidities = st.slider("How many comorbidities do you have?", min_value=0, max_value=10, value=0, step=1)
 
-st.button("Calculate Geneva Risk Score"):
+st.button("Calculate Geneva Risk Score")
 score = calculate_geneva_risk_score(age, gender, bmi, history_of_vte, active_cancer, recent_surgery_or_trauma, comorbidities)
 st.write(f"Your Geneva Risk Score for VTE Prophylaxis is: {score:.2f}")
